@@ -1,0 +1,106 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+body{
+    /* height : ; */
+    height : 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+}
+.wrapper {
+
+    position : relative;
+    max-width: 800px;
+    width : 90%;
+    height : 62vh;
+    margin: auto;
+    min-height : 400px;
+    font-family: 'Lexend Deca', sans-serif;
+    display : flex;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 95%);
+    overflow: hidden;
+
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.component{
+    position : relative;
+    padding : 50px;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+.sedan button{
+    color : hsl(31, 77%, 52%);
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.suv button{
+    color: hsl(184, 100%, 22%); 
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+.heading{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 95%);
+}
+.content{
+    margin : 20px 0;
+    color : hsla(0, 0%, 100%, 0.75);
+}
+.content button{
+    position : absolute;
+    left : 50px;
+    bottom : 50px;
+    padding : 10px;
+    width : 130px;
+    font-size : 15px;
+    font-weight : bold;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    border: none;
+}
+.component img{
+    margin-bottom : 30px;
+}
+
+@media (max-width:600px){
+    .wrapper{
+        flex-direction: column;
+        /* flex-wrap : wrap; */
+        height : auto;
+        /* width : 100%; */
+        background-color: red;
+        margin : 40px auto;
+    }
+    .component{
+        height : 300px;
+    }
+    body{
+        height : auto;
+    }
+}
+
+@media (min-width:600px) and (max-width: 750px){
+    .heading{
+        font-size: 1.5em;
+    }
+    .content{
+        font-size : 13px;
+    }
+}
